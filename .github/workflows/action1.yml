@@ -12,6 +12,7 @@ on:
 jobs:
   # This workflow contains a two jobs called "write-to-console" & "build"  
   write-to-console:
+    name: Write to console
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Hello world from Navdeep Singh :)'
