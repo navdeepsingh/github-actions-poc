@@ -1,0 +1,17 @@
+# This is a basic workflow to help you get started with Actions
+
+name: first-github-action
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+    
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a two jobs called "write-to-console" & "build"  
+  write-to-console:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello world from Navdeep Singh :)'
