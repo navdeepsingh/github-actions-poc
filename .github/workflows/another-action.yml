@@ -2,10 +2,12 @@ name: another-action
 on: [push]
 jobs: 
   write-to-console:
-  name: Write to console
+    name: Write to console
+    runs-on: ubuntu-latest
     steps:
       - run: echo 'Alta Vista Baby'
-  testing: 
+  testing:
+    runs-on: ubuntu-latest
     steps:      
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
